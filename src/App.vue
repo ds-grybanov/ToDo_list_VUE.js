@@ -17,7 +17,6 @@
     <div 
       class="task__list">
       <div
-        @load="loadLocalStorage(task)"
         v-for="task of todoList"
         :key="task.name" 
         :style="{ background: `${task.priority}`}"
@@ -88,10 +87,6 @@ export default {
 
 .radio__block label:nth-child(7) {
   background-color: blue;
-}
-
-.task__list {
-
 }
 
 p {
